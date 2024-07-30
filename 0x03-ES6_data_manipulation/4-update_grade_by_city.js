@@ -1,4 +1,4 @@
-export default function updateStudentGradeByCity (array, city, grad) {
+export default function updateStudentGradeByCity(array, city, grad) {
   return array
     .filter((i) => i.location === city)
     .map((student) => {
@@ -9,4 +9,3 @@ export default function updateStudentGradeByCity (array, city, grad) {
       return { ...student, grade };
     });
 }
-
